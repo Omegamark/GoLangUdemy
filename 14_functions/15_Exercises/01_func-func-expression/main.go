@@ -4,7 +4,7 @@ package main
 import "fmt"
 
 func main() {
-	isEven(8)
+	isEven(7)
 }
 
 func isEven(z int) (int, bool) {
