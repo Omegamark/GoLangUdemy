@@ -3,18 +3,15 @@ package main
 import "fmt"
 
 func main() {
+	funcManyWayz(1, 2)
+	funcManyWayz(1, 2, 3)
 	aSlice := []int{1, 2, 12, 3, 5, 10}
-	funkManyWays(aSlice...)
+	funcManyWayz(aSlice...)
+	funcManyWayz()
 }
 
-func funkManyWays(z ...int) int {
-	// this is the same solution as variadic function. I happened to solve exercise 5 before it was asked.
-	var largestNum int
-	for _, v := range z {
-		if largestNum < v {
-			largestNum = v
-		}
-	}
-	fmt.Println(largestNum)
-	return largestNum
+// Had to remove the expected return of int in order to run the program.
+
+func funcManyWayz(z ...int) {
+	fmt.Println(z)
 }

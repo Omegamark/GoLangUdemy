@@ -10,9 +10,10 @@ func main() {
 
 func findDaVal() bool {
 	var solution bool
-	solution = (true && false) || (false && true) || (false && false)
+	solution = (true && false) || (false && true) || !(false && false)
 	fmt.Println(solution)
 	return solution
 }
 
-// It returns false.
+// With (false && false) It returns false.
+// With !(false && false) it returns true.
