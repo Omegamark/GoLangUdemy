@@ -17,6 +17,7 @@ func main() {
 	fmt.Println(p1.Last)
 	fmt.Println(p1.Age)
 
+	// converting to byte slice
 	bs := []byte(`{"First":"James", "Last":"Bond", "Age":20}`)
 	json.Unmarshal(bs, &p1)
 

@@ -7,7 +7,7 @@ import (
 
 type person struct {
 	First string
-	Last  string `json:"-"`
+	Last  string `json:"-"` // this means skip this value in json.
 	Age   int    `json:"wisdom score"`
 }
 

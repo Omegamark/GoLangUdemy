@@ -11,6 +11,7 @@ func main() {
 		3: "Bon dia!",
 	}
 	fmt.Println(myGreeting)
+    // Deleting a non-existant value does not cause an error.
 	delete(myGreeting, 7)
 	fmt.Println(myGreeting)
 }
