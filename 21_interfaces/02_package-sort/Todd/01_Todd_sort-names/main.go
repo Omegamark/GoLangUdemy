@@ -20,3 +20,6 @@ func main() {
 	sort.Sort(studyGroup)
 	fmt.Println(studyGroup)
 }
+
+// https://golang.org/pkg/sort/#Sort
+// https://golang.org/pkg/sort/#Interface
